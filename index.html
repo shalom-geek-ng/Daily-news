@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDailyNews</title>
+    <link rel="stylesheet" href="Static/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top top-0 py-3">
+    <div class="container">
+      <h5 data-i18n> <strong>
+        MyDailyNews  </strong> </h5>
+      </a>
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" style="border: 0px;"></path></svg>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Daily-News</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" aria-current="page" href="index.html">News</a>
+            </li>
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="sports.html">Sports</a>
+            </li>
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="economy.html">Economy</a>
+            </li>
+            
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="health.html">Health</a>
+            </li>
+            
+            <li  class="nav-item">
+              <a data-i18n  class="nav-link text-dark" href="politics.html">Politics</a>
+            </li>
+     
+  
+  
+  </ul>
+  <!-- Dropdown start -->
+  
+  <div  class="">
+  <li  class="nav-item dropdown me-2">
+    <a  class="nav-link dropdown-toggle mt-2 text-dark " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i  class="fa fa-globe" aria-hidden="true"></i>Languages
+    </a>
+    <ul  class="dropdown-menu">
+      <li ><button onclick="changeGlobalLanguage('en')" class="dropdown-item" href="">English</button></li>
+      <li ><button onclick="changeGlobalLanguage('ig')" class="dropdown-item" href="">Igbo</button></li>
+      <li >
+  
+      </li>
+      <li><button onclick="changeGlobalLanguage('yo')" class="dropdown-item" href="">Yoruba</button></li>
+      <li><button onclick="changeGlobalLanguage('ha')" class="dropdown-item" href="">Hausa</button></li>
+      <li><button onclick="changeGlobalLanguage('pt')" class="dropdown-item" href="">Portuguese</button></li>
+      <li><button onclick="changeGlobalLanguage('ar')" class="dropdown-item" href="">Arabic</button></li>
+      <li><button onclick="changeGlobalLanguage('fr')" class="dropdown-item" href="">French</button></li>
+      <li><button onclick="changeGlobalLanguage('es')" class="dropdown-item" href="">Spanish</button></li>
+      <li><button onclick="changeGlobalLanguage('it')" class="dropdown-item" href="">Italian</button></li>
+    
+      
+    </ul>
+  </div>
+  <!-- Dropdown end -->
+           
+  </div>
+  
+  </nav>
+   
+  <div  class="container-fluid bg-light py-4 col-lg-6 col-md-6 col-sm-6" style="width: 100%;">
+    <div  class="container mx-auto ">
+    <img class="gif-advert"  src="static/Image/6166214319946042169.gif" alt="" style="width: 100%; height: 250px;">
+  </div>
+</div>
+
+   
+    
+ <!-- Welcome-page start -->
+ <div  class="container  position-relative"  style="margin: top 30px; ">
+  <p data-i18n class="Paragraph1" data-aos="zoom-in-down "  data-aos-duration="1000" data-aos-easing="ease-in-out"> Welcome to Daily-news </p>
+  <p data-i18n class="position-absolute top-0 end-0 pe-3 Paragraph1" style="color: gray;" data-aos="zoom-in">  Friday, 9 December</p>  
+</div>
+<!-- Welcome-page end -->
+
+<div class=" dis mx-auto" style="width: 90%;">
+  <div class="row gx-2">
+  <div class="box col-lg-6 ">
+    <!-- first boxed start -->
+    <div class="boxed " style="margin-top:60px " >
+      <div class="pic-content bg-danger "style="height: 350px; position: relative; "style="text-align: center; "  >
+      <img src="static/Image/darkfrance.png" height="350px" width="100%" alt="">
+      <div style="position: absolute; top: 50%; bottom: 50%; padding: 10px 20px;"><p data-i18n class=" text-light" style="margin-bottom: 0px;"> Europe</p>
+     <a href="news1.html"> <h1  data-i18n class=" text-white">Europe take note:France bans short-haul flight</h1> </a>
+      </div>
+      </div>
+      <div class="pic-content bg-danger " style="height: 250px; margin-top: 10px; position: relative;">
+      <img src="Static/Image/darkwar.png"  height="300px" width="100%" alt="">
+      <div style="position: absolute; top: 50%; bottom: 50%; padding: 10px 20px;">
+        <p class="data-i18n text-light" style="margin-bottom: 0px;"> War</p>
+        <a href="news2.html"> <h1  data-i18n class=" text-white">War would be at reduced tempo for months says US</h1> </a>
+  
+    </div>
+      </div>
+    </div>
+    <!-- first boxed end -->
+  </div>
+  <!-- second box start -->
+
+  <div class="box boxxx  col-lg-6 " style="margin-top: 60px;">
+    <div class="boxed " style="height: 660px;">
+    <div class="box flexed flex" style="height: 230px; ">
+    <div class="row gx-1">
+  <!--  box1 start -->
+  <div class="box  col-lg-6 col-md-6">
+    <div class="boxed bg-primary  " style="height: 230px; position: relative;">
+    <img src="static/Image/darkapple.png" style="height: 230px; width: 100%;" alt="">
+    <div style="position: absolute; top: 60%; bottom: 50%; padding: 0px 10px;">
+   <a href="news3.html"> <p data-i18n class=" text-white"><strong> Meet the Slovenian fitness tracker that won the Apple Watch ‘App of the Year’ award</strong></p></a>
+    </div>
+    </div>
+  </div>
+  <div class="box  col-lg-6 col-md-6">
+    <div class="boxed bg-primary" style="height: 230px; position: relative;">
+    <img src="static/Image/darktype.png" height="230px" width="100%" alt="">
+    <div style="position: absolute; top: 60%; bottom: 50%; padding: 0px 10px;">
+      <a href="news4.html"> <p data-i18n class=" text-white"><strong>If European SMEs are going to survive, they need tech now more than ever</strong></p></a>
+    </div>
+    
+    </div>
+  </div>
+    <!--  box1 end -->
+    </div>
+    </div>
+    <div class="box mt-2" style="height: 250px; margin-top: 10px; position: relative;">
+    <img src="static/Image/darktechnology.png" height="420px" width="100%" alt="">
+    <div style="position: absolute; top: 90%; bottom: 50%; padding: 10px 20px;">
+      <p class="text-white" style="margin-bottom: 0px;"><strong> AUTONOMOUS DRIVING</strong></p>
+      <a href="news5.html"> <h1 data-i18n class=" text-white">This is why you can’t ride hail an autonomous taxi in Europe… yet</h1> </a>
+
+  </div>
+    </div>
+    </div>
+  </div>
+    <!-- second box end -->
+</div>
+</div>
+<div class="container containerd mt-3" >
+<div class="carousel "
+  data-flickity='{ "wrapAround": true }'>
+  
+  <div class="carousel-cell1 bg-light" style="height: 200px; width: 100%; ">
+    <img src="static/Image/france1.jpg" style="width: 100%; height: 150px;" alt="">
+  <figcaption data-i18n style="font-size: 20px;" class="paragraph1" data-i18n><a href="news1.html"> Europe take note:France bans short-haul flight</a></figcaption>
+  </div>
+  <div class="carousel-cell1 bg-light" style="height: 200px; width: 100%; ">
+    <img src="static/Image/apple.jpg" style="width: 100%; height: 150px;" alt="">
+  <figcaption data-i18n style="font-size: 20px;" class="paragraph1" data-i18n><a href="news3.html"> Meet the Slovenian fitness tracker that won the Apple Watch ‘App of the Year’ award</a></figcaption>
+  </div>
+  <div class="carousel-cell1 bg-light" style="height: 200px; width: 100%; ">
+    <img src="static/Image/type.jpg" style="width: 100%; height: 150px;" alt="">
+  <figcaption data-i18n style="font-size: 20px;" class="paragraph1"><a href="news4.html"> If European SMEs are going to survive, they need tech now more than ever</a></figcaption>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel end -->
+
+   
+
+    
+   <div class="box  fit paragraph2 my-4" style="margin: auto; width:fit-content;"><h2 data-i18n> MOST POPULAR STORIES TODAY</h2></div>
+
+   <div class="containerds d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 20%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/europee.jpg" width="100%" height="130px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news6.html"> <p data-i18n class=" content"> European MRI study provides experimental evidence indicating our brains are quantum </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 20%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/ai.webp" width="100%" height="130px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="new7.html"> <p data-i18n class="content">  Why AI governance is important for building more trustworthy, explainable AI </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 20%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/ibm.jpg" width="100%" height="130px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news8.html"> <p data-i18n class="content">  How tech can help companies fast-track their sustainability goals </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 20%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/ibm and tmw.webp" width="100%" height="130px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news9.html"> <p data-i18n class="content">  Why the future of AI is flexible, reusable foundation models </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 20%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/image.jpg" width="100%" height="130px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news10.html"> <p data-i18n class="content">  Palace race incident was abuse says Charity boss </p> </a>
+    </div>
+    </div>
+   </div> 
+
+      <!--sports container start  -->
+      <div class="box  fit paragraph2 my-5" style="margin: auto; width:90%;"><h2 data-i18n> Sports News</h2></div>
+
+   <div class="containerds d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/Senegal.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news11.html"> <p data-i18n class=" content"> Why Senegal have nothing to loose against England </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/brazil2.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news13.html"> <p data-i18n class="content">  World Cup 2022: Brazil put down the biggest marker at Qatar tournament</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/morocco.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news14.html"> <p data-i18n class="content"> Hakimi hits winning penalty as Morocco beat Spain</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/worldcup.png" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news15.html"> <p data-i18n class="content">  What we learned from a wild world cup group stage </p> </a>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+   </div> 
+      <!-- sports container end -->
+      <!-- sport news2 -->
+      
+
+   <div class="containerdss d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/criket2.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news16.html"> <p data-i18n class=" content">Daphne Schrager: Former sprinter turned para-cyclist on winning her first rainbow jersey</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/mbppe.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news17.html"> <p data-i18n class="content"> World Cup 2022: Kylian Mbappe - seven ways he's France's superstar</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/criket.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news18.html"> <p data-i18n class="content"> Pakistan v England: Ollie Robinson says tourists can win in all conditions</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/cycling.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news19.html"> <p data-i18n class="content">  UCI Track Champions League 2022: Katie Archibald's London win not enough to retain endurance title </p> </a>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+   </div> 
+      <!-- sports container2 end -->
+      <!-- more start -->
+      <div   class="more-btn bg-blue  text-center  bg-info rounded-5 my-3 pt-2 pb-1 px-4 mx-auto" style="width: fit-content;align-items: center;"><a href="sports.html"> <p data-i18n class="text-light"> <strong> View More </strong></p></a></div>
+      <!-- more end -->
+      
+      <div class="weather-icon my-3 " style="width: 88%; margin: auto;">
+      <h3 data-i18n >  Lagos Weather </h3>
+      <img src="static/Image/weather.gif" alt="">
+    <strong  >  SUN</strong> 33°C <img src="static/Image/weather2.gif" alt="">  <strong>  MON</strong> 33°C
+    <img src="static/Image/weather2.gif" alt="">  <strong  >  TUE</strong> 33°C
+    <img src="static/Image/weather2.gif" alt="">  <strong  >  WED</strong> 33°C
+      </div>
+   
+
+     
+
+
+<div class="container-fluid pb-3 pt-4 bg-blue">
+<div class="form-container text-center   mx-auto" style="width: 50%; height: fit-content;">
+  <h1 data-i18n class="text-light newletter"> Get the TNW newsletter </h1>
+  <p data-i18n class="text-light">Getting to the heart of the European tech and startup scene.</p>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"></label>
+    <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="name@example.com ">
+    
+  </div>
+
+</div>
+<div class="" style="width: 50%; text-align: center; margin: auto; color: white;" >
+<input type="checkbox" name="" id="">
+  I agree to allow TNW to store and process my personal data
+</div>
+<input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+<div class="mt-3 submit-btn" style="width: 5%; margin: auto; " ><label class="btn btn-primary" for="btn-check-2">Submit</label>
+</div>
+</div>
+<!-- headlines container start -->
+<div id="economy">
+<div class="headline-container " style="border-top:1px solid black ;height: fit-content; margin-bottom: 20px !important;" >
+<h1 data-i18n class="text-gray"> Economy </h1>
+<!-- headline -->
+<div class="headlines-content " style="width: 100%; height:fit-content;  display: flex; justify-content: space-between;">
+<div class="headlines-content1 "  style="width: 49%; height: 350px;">
+<div class="image-headline" style="height: 300px;">
+<img src="static/Image/economy1.jpg" width="100%" height="300px" alt="">
+</div>
+<div class="content-headline">
+<a href="news20.html"> <p data-i18n>  Economy Week Ahead: U.S. Trade and Supplier Prices in Focus </p></a>
+</div>
+</div>
+<div class="headlines-content2 " style="width: 49%; height: fit-content ;">
+  <!-- headline-content-contained start -->
+  <div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+<div class="content2 bg-danger" style="width:30%; height: 80px;">
+<img src="static/Image/economy2.jpg" style="width: 100%; height:80px;" alt="">
+</div>
+<!-- end -->
+<div class="content2 " style="width:70%; height: 80px;">
+<a href="news21.html"> <p data-i18n> Threat of Rail Strike Reveals Persistent Supply-Chain Risks to U.S. Economy</p></a></div>
+</div>
+<!-- end -->
+<div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+<div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+  <img src="static/Image/economy3.jpg" style="width: 100%; height:80px;" alt="">
+</div>
+<div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+ <a href="news22.html"><p data-i18n> China’s Aggression Is Persuading Japan to Rearm</p></a> </div>
+</div>
+<div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+  <div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+    <img src="static/Image/economy4.jpg" style="width: 100%; height:80px;" alt="">
+  </div>
+  <div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+   
+<a href="news23.html"> <p data-i18n> Russian Oligarch Seizes 400,000 Acres of Ukrainian Farmland, Owners Say</p></a></div>
+  </div>
+  <div class="headline-content-contained new" style="display: flex; justify-content:space-between;">
+    <div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+      <img src="static/Image/econmy5.webp" style="width: 100%; height:80px;" alt="">
+    </div>
+    <div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+      <a href="news24.html"> <p data-i18n> Could Europe have a dominant smartphone again — and is it even needed?</p></a></div>
+    </div></div>
+</div>
+</div>
+<!-- headline end -->
+<!-- headlines container end -->
+
+
+<!-- headlines2 container start -->
+</div>
+<div class="headline-container " style="border-top:1px solid black ;height: fit-content; margin-bottom: 20px !important;" >
+  <h1 data-i18n class="text-gray"> Politics </h1>
+  <!-- headline -->
+  <div class="headlines-content " style="width: 100%; height:fit-content;  display: flex; justify-content: space-between;">
+  <div class="headlines-content1 "  style="width: 49%; height: 350px;">
+  <div class="image-headline" style="height: 300px;">
+  <img src="static/Image/politics1.webp" width="100%" height="300px" alt="">
+  </div>
+  <div class="content-headline">
+  <a href="news25.html"> <p data-i18n>Chris Mason: Strikes and unrest spell trouble for government</p> </a>
+  </div>
+  </div>
+  <div class="headlines-content2 " style="width: 49%; height: fit-content ;">
+    <!-- headline-content-contained start -->
+    <div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+  <div class="content2 bg-danger" style="width:30%; height: 80px;">
+  <img src="static/Image/politics2.jpg" style="width: 100%; height:80px;" alt="">
+  </div>
+  <!-- end -->
+  <div class="content2 " style="width:70%; height: 80px;">
+   <a href="news26.html"> <p data-i18n> Stephen Flynn elected as new SNP leader at Westminster</div> </p> </a>
+  </div>
+  <!-- end -->
+  <div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+  <div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+    <img src="static/Image/politics3.jpg" style="width: 100%; height:80px;" alt="">
+  </div>
+  <div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+  <a href="news27.html"> <p data-i18n> MP Lucy Allan accused of bullying by local ex chair</p></a></div>
+  </div>
+  <div class="headline-content-contained" style="display: flex; justify-content:space-between;">
+    <div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+      <img src="static/Image/politics4.webp" style="width: 100%; height:80px;" alt="">
+    </div>
+    <div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+     
+ <a href="news28.html"><p data-i18n> Ambulance staff to strike on 21 December</p></a></div>
+    </div>
+    <div class="headline-content-contained new" style="display: flex; justify-content:space-between;">
+      <div class="content2 " style="width:30%; height: 80px; margin-top: 20px;">
+        <img src="static/Image/politics5.webp" style="width: 100%; height:80px;" alt="">
+      </div>
+      <div class="content2 " style="width:70%; height: 80px; margin-top: 20px;">
+   <a href="news29.html">  <p data-i18n>  Conservative donations fall to lowest level since 2020 </p></a></div>
+      </div></div>
+  </div>
+  </div>
+  <!-- headline end -->
+  <!-- headlines2 container end -->
+  
+
+ 
+
+
+<!-- Footer -->
+<footer class="text-center mt-4 text-lg-start bg-dark text-muted" style="margin-top: 0px;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    
+    <!-- Left -->
+
+    <!-- Right -->
+    <div  class="box" style="margin: auto; width:fit-content; height:fit-content;">
+      <div class="mx-auto d-none d-lg-block">
+        <span data-i18n  class="text-white">Get connected with us on social networks:</span>
+      </div>
+      <a href="https://web.facebook.com/shalom.oluwafemi.92"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-facebook fa-stack-1x " style="color: white; "></i>
+    </a>
+      </span>
+    
+     <a href="https://twitter.com/OluwafemiShalo1"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+    
+       <a href="https://www.linkedin.com/in/shalom-oluwafemi-273317251/"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-linkedin fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="https://www.instagram.com/shalomoluwafemi/">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-instagram fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="mailto:oluwafemishalom3@gmail.com">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-envelope-o fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="tel:+2348166649897">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-phone fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+    </span>
+    <a href="https://github.com/shalom-geek-ng">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+      <i class="fa fa-github fa-stack-1x" style="color: white;"></i>
+    </a>
+    </span>
+    
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">
+            <i class="fas fa-gem me-3 ">
+
+            </i>Daily-News
+          </h6>
+          <p>
+           
+              <p ><strong><button onclick="changeGlobalLanguage('en')" class="dropdown-item text-white" href=""  aria-colcount="" >English</button></strong>
+              </p>
+    <p ><strong><button onclick="changeGlobalLanguage('ig')" class="dropdown-item text-white" href=""  aria-colcount="" >Igbo</button></strong></p>
+    <p >
+
+    </p>
+    <p><strong><button onclick="changeGlobalLanguage('yo')" class="dropdown-item text-white" href=""  aria-colcount="" >Yoruba</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('ha')" class="dropdown-item text-white" href=""  aria-colcount="" >Hausa</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('pt')" class="dropdown-item text-white" href=""  aria-colcount="" >Portuguese</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('ar')" class="dropdown-item text-white" href=""  aria-colcount="" >Arabic</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('fr')" class="dropdown-item text-white" href=""  aria-colcount="" >French</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('es')" class="dropdown-item text-white" href=""  aria-colcount="" >Spanish</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('it')" class="dropdown-item text-white" href=""  aria-colcount="" >Italian</button></p></strong>
+           
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Products
+          </h6>
+          
+            <p><a data-i18n class="nav-link text-white" aria-current="page" href="index.html">News</a>
+
+          </p>
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Sports</a>
+          </p>
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Economy</a>
+          </p>
+          
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Health</a>
+          </p>
+          
+          <p  class="nav-item">
+            <a data-i18n  class="nav-link text-white" href="">Politics</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Useful links
+          </h6>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Pricing</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Settings</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Orders</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">Contact</h6>
+          <p >  </p>
+          <p class="text-white">
+           
+            oluwafemishalom3@gmail.com
+          </p>
+          <p class="text-white"> +234 81 666 498 97</p>
+          <p class="text-white">+234 81 666 498 97</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Daily-News.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="static/Js/script.js"></script>
+    <script src="static/Js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

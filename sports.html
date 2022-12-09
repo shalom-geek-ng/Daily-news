@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDailyNews</title>
+    <link rel="stylesheet" href="Static/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top top-0 py-3">
+    <div class="container">
+      <h5 data-i18n> <strong>
+        MyDailyNews  </strong> </h5>
+      </a>
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" style="border: 0px;"></path></svg>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Daily-News</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" aria-current="page" href="index.html">News</a>
+            </li>
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="sports.html">Sports</a>
+            </li>
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="economy.html">Economy</a>
+            </li>
+            
+            <li  class="nav-item">
+              <a data-i18n class="nav-link text-dark" href="health.html">Health</a>
+            </li>
+            
+            <li  class="nav-item">
+              <a data-i18n  class="nav-link text-dark" href="politics.html">Politics</a>
+            </li>
+     
+  
+  
+  </ul>
+  <!-- Dropdown start -->
+  
+  <div  class="">
+  <li  class="nav-item dropdown me-2">
+    <a  class="nav-link dropdown-toggle mt-2 text-dark " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i  class="fa fa-globe" aria-hidden="true"></i>Languages
+    </a>
+    <ul  class="dropdown-menu">
+      <li ><button onclick="changeGlobalLanguage('en')" class="dropdown-item" href="">English</button></li>
+      <li ><button onclick="changeGlobalLanguage('ig')" class="dropdown-item" href="">Igbo</button></li>
+      <li >
+  
+      </li>
+      <li><button onclick="changeGlobalLanguage('yo')" class="dropdown-item" href="">Yoruba</button></li>
+      <li><button onclick="changeGlobalLanguage('ha')" class="dropdown-item" href="">Hausa</button></li>
+      <li><button onclick="changeGlobalLanguage('pt')" class="dropdown-item" href="">Portuguese</button></li>
+      <li><button onclick="changeGlobalLanguage('ar')" class="dropdown-item" href="">Arabic</button></li>
+      <li><button onclick="changeGlobalLanguage('fr')" class="dropdown-item" href="">French</button></li>
+      <li><button onclick="changeGlobalLanguage('es')" class="dropdown-item" href="">Spanish</button></li>
+      <li><button onclick="changeGlobalLanguage('it')" class="dropdown-item" href="">Italian</button></li>
+    
+      
+    </ul>
+  </div>
+  <!-- Dropdown end -->
+           
+  </div>
+  
+  </nav>
+   
+  <div  class="container-fluid bg-light py-4 col-lg-6 col-md-6 col-sm-6" style="width: 100%;">
+    <div  class="container mx-auto ">
+    <img class="gif-advert"  src="static/Image/6166214319946042169.gif" alt="" style="width: 100%; height: 250px;">
+  </div>
+</div>
+
+   
+    
+ <!-- Welcome-page start -->
+ <div  class="container  position-relative"  style="margin: top 30px; ">
+  <p data-i18n class="Paragraph1" data-aos="zoom-in-down "  data-aos-duration="1000" data-aos-easing="ease-in-out"> Welcome to Daily-news </p>
+  <p data-i18n class="position-absolute top-0 end-0 pe-3 Paragraph1" style="color: gray;" data-aos="zoom-in">  Friday, 9 December</p>  
+</div>
+<!-- Welcome-page end -->
+
+
+      <!--sports container start  -->
+      <div class="box  fit paragraph2 my-5" style="margin: auto; width:90%;"><h2 data-i18n> Sports News</h2></div>
+
+   <div class="containerds d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/Senegal.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news11.html"> <p data-i18n class=" content"> Why Senegal have nothing to loose against England </p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/brazil2.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news13.html"> <p data-i18n class="content">  World Cup 2022: Brazil put down the biggest marker at Qatar tournament</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/morocco.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news14.html"> <p data-i18n class="content"> Hakimi hits winning penalty as Morocco beat Spain</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/worldcup.png" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news15.html"> <p data-i18n class="content">  What we learned from a wild world cup group stage </p> </a>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+   </div> 
+      <!-- sports container end -->
+      <!-- sport news2 -->
+      
+
+   <div class="containerdss d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/criket2.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news16.html"> <p data-i18n class=" content">Daphne Schrager: Former sprinter turned para-cyclist on winning her first rainbow jersey</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/mbppe.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news17.html"> <p data-i18n class="content"> World Cup 2022: Kylian Mbappe - seven ways he's France's superstar</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/criket.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news18.html"> <p data-i18n class="content"> Pakistan v England: Ollie Robinson says tourists can win in all conditions</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/cycling.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news19.html"> <p data-i18n class="content">  UCI Track Champions League 2022: Katie Archibald's London win not enough to retain endurance title </p> </a>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+   </div> 
+      <!-- sports container2 end -->
+      <!-- sport news2 -->
+      
+
+   <div class="containerdss d-flex mx-auto" style="width: 90%;">
+    
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/world cup friday.png" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news30.html"> <p data-i18n class=" content">World Cup 2022: Croatia v Brazil & Netherlands v Argentina in BBC's 'Fabulous Friday'</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/luis enrique.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+    <a href="news31.html"> <p data-i18n class="content"> World Cup 2022: Spain boss Luis Enrique leaves role after last-16 exit</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/nfl.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news32.html"> <p data-i18n class="content"> NFL and Washington Commanders covered up sexual misconduct, says US report</p> </a>
+    </div>
+    </div>
+    <div class="boxes" style="width: 25%; margin-left: 10px;  height: fit-content;">
+    <div class="picture-box">
+      <img class="mypic" src="static/Image/prison3.jpg" width="100%" height="180px" alt="">
+    </div>
+    <div class="content-box " style="height: 50px;">
+   <a href="news33.html"> <p data-i18n class="content">  Brittney Griner: Russia frees US basketball star in swap with arms dealer Viktor Bout </p> </a>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+   </div> 
+      <!-- sports container2 end -->
+    
+
+<!-- Footer -->
+<footer class="text-center mt-4 text-lg-start bg-dark text-muted" style="margin-top: 0px;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    
+    <!-- Left -->
+
+    <!-- Right -->
+    <div  class="box" style="margin: auto; width:fit-content; height:fit-content;">
+      <div class="mx-auto d-none d-lg-block">
+        <span data-i18n  class="text-white">Get connected with us on social networks:</span>
+      </div>
+      <a href="https://web.facebook.com/shalom.oluwafemi.92"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-facebook fa-stack-1x " style="color: white; "></i>
+    </a>
+      </span>
+    
+     <a href="https://twitter.com/OluwafemiShalo1"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+    
+       <a href="https://www.linkedin.com/in/shalom-oluwafemi-273317251/"> <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-linkedin fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="https://www.instagram.com/shalomoluwafemi/">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-instagram fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="mailto:oluwafemishalom3@gmail.com">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-envelope-o fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+      <a href="tel:+2348166649897">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+        <i class="fa fa-phone fa-stack-1x" style="color: white;"></i>
+    </a>
+      </span>
+    </span>
+    <a href="https://github.com/shalom-geek-ng">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+      <i class="fa fa-github fa-stack-1x" style="color: white;"></i>
+    </a>
+    </span>
+    
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">
+            <i class="fas fa-gem me-3 ">
+
+            </i>Daily-News
+          </h6>
+          <p>
+           
+              <p ><strong><button onclick="changeGlobalLanguage('en')" class="dropdown-item text-white" href=""  aria-colcount="" >English</button></strong>
+              </p>
+    <p ><strong><button onclick="changeGlobalLanguage('ig')" class="dropdown-item text-white" href=""  aria-colcount="" >Igbo</button></strong></p>
+    <p >
+
+    </p>
+    <p><strong><button onclick="changeGlobalLanguage('yo')" class="dropdown-item text-white" href=""  aria-colcount="" >Yoruba</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('ha')" class="dropdown-item text-white" href=""  aria-colcount="" >Hausa</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('pt')" class="dropdown-item text-white" href=""  aria-colcount="" >Portuguese</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('ar')" class="dropdown-item text-white" href=""  aria-colcount="" >Arabic</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('fr')" class="dropdown-item text-white" href=""  aria-colcount="" >French</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('es')" class="dropdown-item text-white" href=""  aria-colcount="" >Spanish</button></strong></p>
+    <p><strong><button onclick="changeGlobalLanguage('it')" class="dropdown-item text-white" href=""  aria-colcount="" >Italian</button></p></strong>
+           
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Products
+          </h6>
+          
+            <p><a data-i18n class="nav-link text-white" aria-current="page" href="index.html">News</a>
+
+          </p>
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Sports</a>
+          </p>
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Economy</a>
+          </p>
+          
+          <p  class="nav-item">
+            <a data-i18n class="nav-link text-white" href="">Health</a>
+          </p>
+          
+          <p  class="nav-item">
+            <a data-i18n  class="nav-link text-white" href="">Politics</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase fw-bold mb-4 text-white">
+            Useful links
+          </h6>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Pricing</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Settings</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Orders</a>
+          </p>
+          <p data-i18n>
+            <a href="#!" class=" text-white">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 data-i18n class="text-uppercase text-white fw-bold mb-4">Contact</h6>
+          <p >  </p>
+          <p class="text-white">
+           
+            oluwafemishalom3@gmail.com
+          </p>
+          <p class="text-white"> +234 81 666 498 97</p>
+          <p class="text-white">+234 81 666 498 97</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Daily-News.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="static/Js/script.js"></script>
+    <script src="static/Js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
