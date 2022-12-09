@@ -1,0 +1,388 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box !important;
+}
+.df{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --heading : 'Noto Sans', sans-serif;
+    --navli: 'Secular One', sans-serif;
+    --paragraph: 'Bebas Neue', cursive;
+    --content :  'Roboto Condensed', sans-serif;
+    --paragraph2:  'Alexandria', sans-serif;
+    --newsletter:  'Alexandria', sans-serif;
+}
+.sports{
+    justify-content: space-between;
+    display: flex;
+}
+h5{
+    font-family: var(--heading);
+    color: #4747b3;
+}
+.h5{
+    font-family: var(--heading);  
+}
+.bg-white{
+    background-color: white;
+}
+
+nav ul li, div li{
+
+font-size: 18px;
+
+}
+.content{
+    font-family: var(--content);
+}
+.paragraph1{
+    font-size: 4rem;
+    font-family: var(--paragraph);
+}
+.Paragraph2{
+    font-family: var(--paragraph2);
+}
+.newletter{
+    font-family: var(--newsletter);
+}
+a, a:hover{
+    color: black;
+    list-style: none;
+     text-decoration: none !important;
+}
+.navbar-nav > .active > a { 
+    background-color: red ; 
+}
+nav ul li a:hover{
+    border-bottom: 2px solid red;
+}
+.Paragraph1{
+    font-family: var(--paragraph);
+    font-size: 20px;
+}
+.bg-image{
+    background-image: url(../Image/background4.jpg);
+    background-position: center;
+   
+}
+/* external css: flickity.css */
+
+/* external css: flickity.css */
+
+/* external css: flickity.css */
+
+/* external css: flickity.css */
+
+/* external css: flickity.css */
+
+
+
+.carousel {
+  background: #EEE;
+}
+.containerd{
+    display: none !important;
+}
+.carousel-cell1 {
+  width: 33% !important;
+  height: 200px;
+  margin-right: 10px;
+ 
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.text-white{
+    color: white;
+}
+.gif-advert{
+    height: 250px;
+    margin-top: 0px;
+}
+
+.more-btn:hover{
+    background-color: darkblue!important;
+}
+.text-gray{
+    color: gray !important;
+}
+.more-btn{
+color: white !important;
+background-color: darkblue!important;
+
+}
+.containerdss{
+    margin-top: 30px !important;
+}
+.bg-blue{
+    background-color: rgb(35, 35, 105) !important;
+}
+.headline-container{
+    width: 60% !important;
+    margin-left: 30px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    padding-left: 40px !important;
+}
+@media only screen and (max-width:767px) {
+    .carousel-cell1 {
+        width: 66% !important;
+        height: 200px;
+        margin-right: 10px;
+       
+   
+        counter-increment: carousel-cell;
+      } 
+      .containerd{
+       display: initial !important;
+    }
+    .dis{
+        display: none !important;
+    }
+    .containerds{
+        display: block !important;
+        margin: auto !important;
+        
+        
+    }
+    .containerdss{
+        display: block !important;
+        margin: auto !important;
+        margin-top: 0px !important;
+        
+    }
+    .boxes{
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin: 10px !important;
+    }
+    .mypic{
+        width: 100% !important;
+    }
+    .content-box{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px !important;
+    }
+    .fit{
+        width: 90% !important;
+    }
+    .Sports{
+        display: block !important;
+    }
+    .sport-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sports-enlarged{
+        width: 200px !important;
+    }
+     .sport-box-content{
+        width: 300px;
+     }
+     .gif-advert{
+        height: fit-content !important;
+     }
+     .more-btn{
+        color: white !important;
+        background-color: darkblue!important;
+        width: 90% !important;
+        margin: auto ;
+        }
+        .headline-container{
+            width: 90% !important;
+            margin: 20px auto !important;
+         }
+         .headlines-content{
+            display: block !important;
+          
+         }
+         .headlines-content1{
+            width: 100% !important;
+         }
+         .headlines-content2{
+            width: 100% !important;
+         }
+       .submit-btn{
+        width: 10% !important;
+       }
+       
+  
+}
+@media only screen and (max-width:576px) {
+    .carousel-cell1 {
+        width: 66% !important;
+        height: 200px;
+        margin-right: 10px;
+       
+   
+        counter-increment: carousel-cell;
+      } 
+      .containerd{
+       display: initial !important;
+    }
+    .dis{
+        display: none !important;
+    }
+    .containerds{
+        display: block !important;
+        margin: auto !important;
+        
+    }
+    .containerdss{
+        display: block !important;
+        margin: auto !important;
+        margin-top: 0px !important;
+        
+    }
+    .boxes{
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin: 10px !important;
+    }
+    .mypic{
+        width: 100% !important;
+    }
+    .content-box{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px !important;
+        
+    }
+    .co
+    .fit{
+        width: 90% !important;
+    }
+    .Sports{
+        display: block !important;
+    }
+    .sport-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sports-enlarged{
+        width: 200px !important;
+    }
+    .sport-box-content{
+        width: 300px;
+     }
+     .gif-advert{
+        height: fit-content !important;
+     }
+   .more-btn{
+    color: white !important;
+    background-color: darkblue!important;
+    width: 90% !important;
+    margin: auto !important;
+    }
+    .headline-container{
+        width: 90% !important;
+        margin: 20px auto !important;
+        padding-left: 0px !important;
+     }
+     .headlines-content{
+        display: block !important;
+     }
+     .headlines-content1{
+        width: 100% !important;
+     }
+     .headlines-content2{
+        width: 100% !important;
+     }
+     .content2{
+        margin-top: 30px !important;
+     }
+     .submit-btn{
+        width: fit-content !important;
+     margin: auto;
+     justify-content: center !important;
+   text-align: center !important;
+}
+@media only screen and (max-width:991px) {
+    .carousel-cell1 {
+        width: 66% !important;
+        height: 200px;
+        margin-right: 10px;
+       
+   
+        counter-increment: carousel-cell;
+    }
+    .flexed{
+        margin-top: 60px;
+        
+    }
+    .containerds{
+        display: block !important;
+        margin: auto !important;
+        
+    }
+    .mytop{
+        margin-top: 30px !important;
+    }
+    .containerdss{
+        display: block !important;
+        margin: auto !important;
+        margin-top: 0px !important;
+        
+    }
+    .boxes{
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin: 10px !important;
+    }
+    .mypic{
+        width: 100% !important;
+    }
+    .content-box{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px !important;
+        
+    }
+    .fit{
+        width: 90% !important;
+    }
+    .Sports{
+        display: block !important;
+    }
+    .sport-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sports-enlarged{
+        width: 200px !important;
+    }
+    .sport-box-content{
+        width: 300px;
+     }
+ .headline-container{
+    width: 90% !important;
+    margin: 20px auto !important;
+ }
+ .submit-btn{
+    width: 10% !important;
+   }
+    }
+}

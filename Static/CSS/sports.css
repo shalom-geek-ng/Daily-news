@@ -1,0 +1,70 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box !important;
+}
+.df{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --heading : 'Noto Sans', sans-serif;
+    --navli: 'Secular One', sans-serif;
+    --paragraph: 'Bebas Neue', cursive;
+    --content :  'Roboto Condensed', sans-serif;
+    --paragraph2:  'Alexandria', sans-serif;
+    --newsletter:  'Alexandria', sans-serif;
+}
+.sports{
+    justify-content: space-between;
+    display: flex;
+}
+h5{
+    font-family: var(--heading);
+    color: #4747b3;
+}
+.h5{
+    font-family: var(--heading);  
+}
+.bg-white{
+    background-color: white;
+}
+
+nav ul li, div li{
+
+font-size: 18px;
+
+}
+.content{
+    font-family: var(--content);
+}
+.paragraph1{
+    font-size: 4rem;
+    font-family: var(--paragraph);
+}
+.Paragraph2{
+    font-family: var(--paragraph2);
+}
+.newletter{
+    font-family: var(--newsletter);
+}
+a, a:hover{
+    color: black;
+    list-style: none;
+     text-decoration: none !important;
+}
+.navbar-nav > .active > a { 
+    background-color: red ; 
+}
+nav ul li a:hover{
+    border-bottom: 2px solid red;
+}
+.Paragraph1{
+    font-family: var(--paragraph);
+    font-size: 20px;
+}
